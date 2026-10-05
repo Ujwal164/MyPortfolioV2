@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeepDrishti — Case Study · Ujwal Bagul</title>
+  <meta name="description" content="DeepDrishti: an AI-powered deepfake face-swap detection platform with explainable heatmaps and forensic reporting. Case study by Ujwal Bagul." />
+  <meta name="theme-color" content="#0b0b0c" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b0b0c'/><text x='50%25' y='58%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='34' fill='%23c8f169'>U</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="case">
+  <div class="grain" aria-hidden="true"></div>
+  <header class="nav" id="nav">
+    <a href="/" class="nav__logo" aria-label="Home">UB<span>.</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="/#work" class="nav__cta">← All work</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Case study · 2025 — 2026</p>
+        <h1 class="case-hero__title" data-reveal>DeepDrishti</h1>
+        <p class="case-hero__lead" data-reveal>
+          <em>Drishti</em> means vision. We set out to build a platform that helps people see whether a face in an
+          image or video is real — and, just as importantly, <em>why</em> the model thinks so.
+        </p>
+        <dl class="case-meta" data-reveal-group>
+          <div><dt>Role</dt><dd>Team Lead · ML &amp; Dashboard UX</dd></div>
+          <div><dt>Timeline</dt><dd>2025 — 2026</dd></div>
+          <div><dt>Recognition</dt><dd>3rd Place, Major Project Competition</dd></div>
+          <div><dt>Stack</dt><dd>PyTorch, TensorFlow, Python, Dashboard UI</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container case-grid">
+        <p class="eyebrow" data-reveal>01 — The problem</p>
+        <div class="case-copy" data-reveal>
+          <h2>Face-swaps are getting harder to spot — and a bare “fake / real” score isn't enough.</h2>
+          <p>Manipulated media spreads faster than it can be checked. Most detection tools return a single number with no context, which makes it hard for a reviewer to trust the result, explain it to someone else, or act on it.</p>
+          <p>Our goal was a system that detects face-swaps accurately <em>and</em> communicates its reasoning: where in the frame, when in the video, and how confident.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <p class="eyebrow" data-reveal>02 — How it works</p>
+        <h2 class="display" data-reveal>From upload to <em>evidence.</em></h2>
+        <div class="pipeline" data-reveal aria-label="Detection pipeline">
+          <svg class="pipeline__lines" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M80 60 H920" />
+          </svg>
+          <ol class="pipeline__steps">
+            <li><span>01</span><strong>Upload</strong><small>Image or video</small></li>
+            <li><span>02</span><strong>Face extraction</strong><small>Detect &amp; align faces per frame</small></li>
+            <li><span>03</span><strong>Deep model</strong><small>Face-swap classification</small></li>
+            <li><span>04</span><strong>Temporal checks</strong><small>Anomalous frames, audio–video sync</small></li>
+            <li><span>05</span><strong>Explain &amp; report</strong><small>Heatmaps + forensic PDF</small></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <p class="eyebrow" data-reveal>03 — What we built</p>
+        <div class="feature-grid">
+          <article class="feature" data-reveal><h3>Deep learning detection</h3><p>Trained models that reach 93% accuracy on face-swap detection datasets.</p></article>
+          <article class="feature" data-reveal><h3>Anomaly frame detection</h3><p>Pinpoints the exact segments of a video that look manipulated, instead of judging the clip as a whole.</p></article>
+          <article class="feature" data-reveal><h3>Audio–video consistency</h3><p>Temporal feature visualisation that flags when lip movement and audio drift apart.</p></article>
+          <article class="feature" data-reveal><h3>Explainable heatmaps</h3><p>XAI overlays show which facial regions drove the model's decision, so reviewers can verify it.</p></article>
+          <article class="feature" data-reveal><h3>Interactive dashboard</h3><p>Confidence scores and detection results visualised so a non-expert can read them at a glance.</p></article>
+          <article class="feature" data-reveal><h3>Automated reports</h3><p>One-click authenticity reports for forensic analysis and record-keeping.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container case-grid">
+        <p class="eyebrow" data-reveal>04 — Design decisions</p>
+        <div class="case-copy" data-reveal>
+          <h2>Trust comes from showing the work.</h2>
+          <p>As team lead I split my time between the model pipeline and the interface. The key UX decision was to never show a score alone: every verdict sits next to the evidence behind it — the heatmap, the flagged frames, the sync graph.</p>
+          <p>We used a calm, neutral palette and reserved warm, alarming colours only for manipulated regions, so the eye goes straight to what matters.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <p class="eyebrow" data-reveal>05 — Outcome</p>
+        <ul class="stats" data-reveal-group>
+          <li class="stat"><span class="stat__num"><span data-count="93">0</span>%</span><span class="stat__label">Detection accuracy on face-swap datasets</span></li>
+          <li class="stat"><span class="stat__num"><span data-count="3">0</span><sup>rd</sup></span><span class="stat__label">Place — Major Project Competition, Terna (Apr 2026)</span></li>
+          <li class="stat"><span class="stat__num">XAI</span><span class="stat__label">Explainable heatmaps for every verdict</span></li>
+          <li class="stat"><span class="stat__num">PDF</span><span class="stat__label">Automated forensic reports</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="case-next">
+      <div class="container">
+        <p class="eyebrow">Next case study</p>
+        <a href="/accesco.html" class="case-next__link">Accesco Living <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 Ujwal Bagul</span>
+      <a href="/#contact" class="link-arrow">Get in touch <span>→</span></a>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/case.js"></script>
+</body>
+</html>
