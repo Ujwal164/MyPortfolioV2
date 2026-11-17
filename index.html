@@ -9,7 +9,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b0b0c'/><text x='50%25' y='58%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='34' fill='%23c8f169'>U</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -22,10 +22,9 @@
     <nav class="nav__links" aria-label="Primary">
       <a href="#about" data-nav="about">About</a>
       <a href="#work" data-nav="work">Work</a>
-      <a href="#experience" data-nav="experience">Experience</a>
-      <a href="#education" data-nav="education">Education</a>
       <a href="#skills" data-nav="skills">Skills</a>
-      <a href="#contact" data-nav="contact" class="nav__cta">Contact</a>
+      <a href="#experience" data-nav="experience">Experience</a>
+      <a href="#education" data-nav="education">Education</a>      <a href="#contact" data-nav="contact" class="nav__cta">Contact</a>
     </nav>
   </header>
 
@@ -54,11 +53,11 @@
     <!-- ABOUT -->
     <section class="section about" id="about" data-shape="drift">
       <div class="container">
-        <p class="eyebrow" data-reveal>01 — About</p>
         <div class="about__grid">
-          <h2 class="display about__title" data-reveal>
-            Design that thinks like an engineer, <em>code that feels like design.</em>
-          </h2>
+          <div class="section-head">
+            <p class="eyebrow" data-reveal>About</p>
+            <h2 class="display" data-reveal>Design that thinks like an engineer, <em>code that feels like design.</em></h2>
+          </div>
           <div class="about__body" data-reveal>
             <p>
               I'm a Computer Engineering graduate from Terna Engineering College who most recently
@@ -76,10 +75,10 @@
     <!-- WORK -->
     <section class="section work" id="work" data-shape="eye">
       <div class="container">
-        <p class="eyebrow" data-reveal>02 — Selected work</p>
-        <div class="work__head">
-          <h2 class="display" data-reveal>Things I've <em>made.</em></h2>
-          <p class="work__intro" data-reveal>Seven projects, one per row. Every row has its own motion — hover to replay it.</p>
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Selected work</p>
+          <h2 class="display" data-reveal>Things I&rsquo;ve <em>made.</em></h2>
+          <p class="section-head__lead" data-reveal>Seven projects, one per row. Every row has its own motion — hover to replay it.</p>
         </div>
 
         <div class="project-list">
@@ -107,7 +106,6 @@
               </div>
             </div>
             <div class="project-row__body">
-              <span class="project-row__index">01</span>
               <div class="project__meta"><span>2025 — 2026</span><span>Team Lead · AI + UX</span></div>
               <h3 class="project__title">DeepDrishti</h3>
               <p class="project__subtitle">Deepfake Face-Swap Detection System</p>
@@ -141,7 +139,6 @@
               </div>
             </div>
             <div class="project-row__body">
-              <span class="project-row__index">02</span>
               <div class="project__meta"><span>2025</span><span>Full-stack</span></div>
               <h3 class="project__title">SafeReport</h3>
               <p class="project__subtitle">Crime Reporting App</p>
@@ -170,7 +167,6 @@
               </div>
             </div>
             <div class="project-row__body">
-              <span class="project-row__index">03</span>
               <div class="project__meta"><span>2026</span><span>UI/UX concept</span></div>
               <h3 class="project__title">RIYA</h3>
               <p class="project__subtitle">Ambient ED Voice Agent Dashboard</p>
@@ -200,7 +196,6 @@
               </div>
             </div>
             <div class="project-row__body">
-              <span class="project-row__index">04</span>
               <div class="project__meta"><span>2026</span><span>Full-stack · CRUD</span></div>
               <h3 class="project__title">Taskflow</h3>
               <p class="project__subtitle">TODO List</p>
@@ -229,7 +224,6 @@
               </div>
             </div>
             <div class="project-row__body">
-              <span class="project-row__index">05</span>
               <div class="project__meta"><span>2025</span><span>Cloud · Computer vision</span></div>
               <h3 class="project__title">Image Analyzer</h3>
               <p class="project__subtitle">AWS Rekognition</p>
@@ -258,7 +252,6 @@
               </div>
             </div>
             <div class="project-row__body">
-              <span class="project-row__index">06</span>
               <div class="project__meta"><span>2025</span><span>Game</span></div>
               <h3 class="project__title">Fruit Dump</h3>
               <p class="project__subtitle">Python arcade game</p>
@@ -287,7 +280,6 @@
               </div>
             </div>
             <div class="project-row__body">
-              <span class="project-row__index">07</span>
               <div class="project__meta"><span>Ongoing</span><span>Learning lab</span></div>
               <h3 class="project__title">My Projects</h3>
               <p class="project__subtitle">Where I practise</p>
@@ -302,111 +294,188 @@
       </div>
     </section>
 
+    <!-- SKILLS -->
+    <section class="section skills" id="skills" data-shape="drift">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Toolkit</p>
+          <h2 class="display" data-reveal>What I <em>work with.</em></h2>
+        </div>
+        <div class="card-grid card-grid--3">
+          <div class="card card--compact" data-reveal>
+            <h3 class="card__title">UI / UX</h3>
+            <ul class="chips" data-stagger><li>Wireframing</li><li>Prototyping</li><li>Responsive Design</li><li>Design Systems</li><li>Dashboard UI</li><li>Figma</li></ul>
+          </div>
+          <div class="card card--compact" data-reveal>
+            <h3 class="card__title">Frontend</h3>
+            <ul class="chips" data-stagger><li>React.js</li><li>Vue.js</li><li>HTML5</li><li>CSS3</li><li>Tailwind CSS</li><li>Bootstrap</li></ul>
+          </div>
+          <div class="card card--compact" data-reveal>
+            <h3 class="card__title">Backend &amp; Data</h3>
+            <ul class="chips" data-stagger><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>MySQL</li><li>PostgreSQL</li></ul>
+          </div>
+          <div class="card card--compact" data-reveal>
+            <h3 class="card__title">AI / ML</h3>
+            <ul class="chips" data-stagger><li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li></ul>
+          </div>
+          <div class="card card--compact" data-reveal>
+            <h3 class="card__title">Languages</h3>
+            <ul class="chips" data-stagger><li>Python</li><li>JavaScript</li><li>Java</li><li>C</li></ul>
+          </div>
+          <div class="card card--compact" data-reveal>
+            <h3 class="card__title">Tools</h3>
+            <ul class="chips" data-stagger><li>Git &amp; GitHub</li><li>Docker</li><li>Postman</li><li>VS Code</li><li>Vercel</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- EXPERIENCE -->
     <section class="section experience" id="experience" data-shape="drift">
       <div class="container">
-        <p class="eyebrow" data-reveal>03 — Experience</p>
-        <h2 class="display" data-reveal>Where I've been <em>building.</em></h2>
-
-        <div class="timeline">
-          <div class="timeline__track" aria-hidden="true"><div class="timeline__line"></div></div>
-
-          <article class="tl-item" data-reveal>
-            <span class="tl-item__dot" aria-hidden="true"></span>
-            <div class="tl-item__meta">
-              <span class="tl-item__date">Aug 2026 — Nov 2026</span>
-            </div>
-            <h3 class="tl-item__title">UI/UX Design Intern Lead <span>· Accesco Living</span></h3>
-            <ul class="tl-item__list">
-              <li>Joined as a UI/UX Designer Intern and was promoted to Intern Lead after one month.</li>
-              <li>Designed seven product projects across apps and websites — Grokly&rsquo;s scheduled orders, re-commerce and home-screen repeat orders, the Accesco Living website and login, the TRACO product page, and a delivery rider app from scratch.</li>
-              <li>Four designs approved for release; the rest handed off to development.</li>
-              <li>Led the design intern team — broke down work, assigned tasks by strength, reviewed designs before approval and wrote clear briefs. Helped hire new interns.</li>
-            </ul>
-            <blockquote class="quote">
-              <p>&ldquo;Ujwal built layouts from first principles, refined them through several rounds of feedback, and delivered polished, approved work across both app and web.&rdquo;</p>
-              <cite>Argha Sengupta <span>· Managing Director &amp; CEO, Accesco Living</span></cite>
-            </blockquote>
-            <a href="/accesco.html" class="link-arrow">Read the case study <span>→</span></a>
-          </article>
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Experience</p>
+          <h2 class="display" data-reveal>Where I&rsquo;ve been <em>building.</em></h2>
         </div>
+
+        <article class="card" data-reveal>
+          <header class="card__head">
+            <span class="card__icon card__icon--logo"><img src="/images/accesco-logo.png" alt="" width="48" height="48" /></span>
+            <div>
+              <h3 class="card__title">UI/UX Design Intern Lead</h3>
+              <p class="card__sub">Accesco Living</p>
+              <p class="card__meta"><span>Aug 2026 — Nov 2026</span><span>3 months</span></p>
+            </div>
+          </header>
+          <div class="card__body">
+            <ul class="card__list">
+              <li>Designed seven product projects across apps and websites — four approved for release, the rest handed off to development.</li>
+              <li>Promoted to Intern Lead after one month; led the design intern team and helped hire new interns.</li>
+            </ul>
+            <details class="card__more">
+              <summary><span class="is-closed">Show more</span><span class="is-open">Show less</span></summary>
+              <ul class="card__list">
+                <li>Projects: Grokly&rsquo;s scheduled orders, re-commerce and home-screen repeat orders, the Accesco Living website and login, the TRACO product page, and a delivery rider app from scratch.</li>
+                <li>As lead: broke down work, assigned tasks by strength, reviewed designs before approval and wrote clear briefs.</li>
+              </ul>
+              <blockquote class="quote">
+                <p>&ldquo;Ujwal built layouts from first principles, refined them through several rounds of feedback, and delivered polished, approved work across both app and web.&rdquo;</p>
+                <cite>Argha Sengupta, Managing Director &amp; CEO, Accesco Living</cite>
+              </blockquote>
+            </details>
+            <a href="/accesco.html" class="link-arrow">Read the case study <span>→</span></a>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- EDUCATION -->
     <section class="section education" id="education" data-shape="drift">
       <div class="container">
-        <p class="eyebrow" data-reveal>04 — Education</p>
-        <h2 class="display" data-reveal>Where I <em>learned.</em></h2>
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Education</p>
+          <h2 class="display" data-reveal>Where I <em>learned.</em></h2>
+        </div>
 
-        <ul class="stats" data-reveal-group>
-          <li class="stat">
-            <span class="stat__num"><span data-count="93">0</span>%</span>
-            <span class="stat__label">Model accuracy on face-swap detection</span>
-          </li>
-          <li class="stat">
-            <span class="stat__num"><span data-count="3">0</span><sup>rd</sup></span>
-            <span class="stat__label">Place — Major Project Competition, Terna</span>
-          </li>
-          <li class="stat">
-            <span class="stat__num">Finalist</span>
-            <span class="stat__label">IEEE Techithon, Atharva University</span>
-          </li>
-          <li class="stat">
-            <span class="stat__num"><span data-count="7">0</span></span>
-            <span class="stat__label">Projects across design, web &amp; AI</span>
-          </li>
-        </ul>
+        <article class="card" data-reveal>
+          <header class="card__head">
+            <span class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9.5 12 5l10 4.5-10 4.5L2 9.5Z"/><path d="M6 11.3V16c0 1.4 2.7 3 6 3s6-1.6 6-3v-4.7"/><path d="M22 9.5V15"/></svg></span>
+            <div>
+              <h3 class="card__title">B.E. Computer Engineering</h3>
+              <p class="card__sub">Terna Engineering College, Nerul</p>
+              <p class="card__meta"><span>2022 — 2026</span><span>CGPA 7.63</span></p>
+            </div>
+          </header>
+          <div class="card__body">
+            <p>Final-year major project: DeepDrishti, a deepfake face-swap detection system I led as team lead.</p>
+          </div>
+        </article>
 
-        <div class="certs" data-reveal>
-          <h3 class="certs__title">Education</h3>
-          <ul class="certs__list">
-            <li><span>B.E. Computer Engineering — Terna Engineering College, Nerul · CGPA 7.63</span><time>2022 — 2026</time></li>
-          </ul>
+        <h3 class="sub-head" data-reveal>Certifications</h3>
+        <div class="card-grid card-grid--2">
+          <article class="card card--compact" data-reveal>
+            <header class="card__head">
+              <span class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 9h10M7 12.5h6"/><path d="m14.5 17 .5 3.5 2-1.2 2 1.2.5-3.5"/></svg></span>
+              <div>
+                <h3 class="card__title">Full-Stack Web Development Bootcamp</h3>
+                <p class="card__sub">Dr. Angela Yu</p>
+                <p class="card__meta"><span>Jul 2026</span></p>
+              </div>
+            </header>
+          </article>
+          <article class="card card--compact" data-reveal>
+            <header class="card__head">
+              <span class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 9h10M7 12.5h6"/><path d="m14.5 17 .5 3.5 2-1.2 2 1.2.5-3.5"/></svg></span>
+              <div>
+                <h3 class="card__title">100 Days of Code: Python Pro Bootcamp</h3>
+                <p class="card__sub">Dr. Angela Yu</p>
+                <p class="card__meta"><span>Dec 2025</span></p>
+              </div>
+            </header>
+          </article>
+          <article class="card card--compact" data-reveal>
+            <header class="card__head">
+              <span class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 9h10M7 12.5h6"/><path d="m14.5 17 .5 3.5 2-1.2 2 1.2.5-3.5"/></svg></span>
+              <div>
+                <h3 class="card__title">Complete Web and Mobile Designer: UI/UX, Figma</h3>
+                <p class="card__sub">Online course</p>
+                <p class="card__meta"><span>Jan 2025</span></p>
+              </div>
+            </header>
+          </article>
+          <article class="card card--compact" data-reveal>
+            <header class="card__head">
+              <span class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 9h10M7 12.5h6"/><path d="m14.5 17 .5 3.5 2-1.2 2 1.2.5-3.5"/></svg></span>
+              <div>
+                <h3 class="card__title">Design and Analysis of Algorithms Masterclass</h3>
+                <p class="card__sub">Online course</p>
+                <p class="card__meta"><span>Aug 2024</span></p>
+              </div>
+            </header>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section skills" id="skills" data-shape="drift">
+    <!-- ACHIEVEMENTS -->
+    <section class="section achievements" id="achievements" data-shape="drift">
       <div class="container">
-        <p class="eyebrow" data-reveal>05 — Toolkit</p>
-        <h2 class="display" data-reveal>What I <em>work with.</em></h2>
-        <div class="skills__grid">
-          <div class="skill-group" data-reveal>
-            <h3>UI / UX</h3>
-            <ul data-stagger><li>Wireframing</li><li>Prototyping</li><li>Responsive Design</li><li>Design Systems</li><li>Dashboard UI</li><li>Figma</li></ul>
-          </div>
-          <div class="skill-group" data-reveal>
-            <h3>Frontend</h3>
-            <ul data-stagger><li>React.js</li><li>Vue.js</li><li>HTML5</li><li>CSS3</li><li>Tailwind CSS</li><li>Bootstrap</li></ul>
-          </div>
-          <div class="skill-group" data-reveal>
-            <h3>Backend &amp; Data</h3>
-            <ul data-stagger><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>MySQL</li><li>PostgreSQL</li></ul>
-          </div>
-          <div class="skill-group" data-reveal>
-            <h3>AI / ML</h3>
-            <ul data-stagger><li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li></ul>
-          </div>
-          <div class="skill-group" data-reveal>
-            <h3>Languages</h3>
-            <ul data-stagger><li>Python</li><li>JavaScript</li><li>Java</li><li>C</li></ul>
-          </div>
-          <div class="skill-group" data-reveal>
-            <h3>Tools</h3>
-            <ul data-stagger><li>Git &amp; GitHub</li><li>Docker</li><li>Postman</li><li>VS Code</li><li>Vercel</li></ul>
-          </div>
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Achievements</p>
+          <h2 class="display" data-reveal>Things I&rsquo;m <em>proud of.</em></h2>
         </div>
 
-        <div class="certs" data-reveal>
-          <h3 class="certs__title">Certifications</h3>
-          <ul class="certs__list">
-            <li><span>Full-Stack Web Development Bootcamp — Dr. Angela Yu</span><time>Jul 2026</time></li>
-            <li><span>100 Days of Code: Python Pro Bootcamp — Dr. Angela Yu</span><time>Dec 2025</time></li>
-            <li><span>Complete Web and Mobile Designer: UI/UX, Figma</span><time>Jan 2025</time></li>
-            <li><span>Design and Analysis of Algorithms Masterclass</span><time>Aug 2024</time></li>
-          </ul>
+        <div class="card-grid card-grid--3">
+          <article class="card card--compact" data-reveal>
+            <header class="card__head">
+              <span class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0V4Z"/><path d="M8 6H4.5a3 3 0 0 0 3.6 3M16 6h3.5a3 3 0 0 1-3.6 3"/><path d="M12 13v4M8.5 20h7M10 17h4"/></svg></span>
+              <div>
+                <h3 class="card__title">3rd Place — Major Project Competition</h3>
+                <p class="card__sub">Terna Engineering College</p>
+                <p class="card__meta"><span>Apr 2026</span><span>DeepDrishti</span></p>
+              </div>
+            </header>
+          </article>
+          <article class="card card--compact" data-reveal>
+            <header class="card__head">
+              <span class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="m9 13.4-1.5 7.1L12 18l4.5 2.5-1.5-7.1"/></svg></span>
+              <div>
+                <h3 class="card__title">Finalist — IEEE Techithon</h3>
+                <p class="card__sub">Atharva University</p>
+                <p class="card__meta"><span>Feb 2026</span></p>
+              </div>
+            </header>
+          </article>
+          <article class="card card--compact" data-reveal>
+            <header class="card__head">
+              <span class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.8"/></svg></span>
+              <div>
+                <h3 class="card__title">93% face-swap detection accuracy</h3>
+                <p class="card__sub">DeepDrishti deep learning models</p>
+                <p class="card__meta"><span>2026</span></p>
+              </div>
+            </header>
+          </article>
         </div>
       </div>
     </section>
@@ -414,13 +483,15 @@
     <!-- CONTACT -->
     <section class="section contact" id="contact" data-shape="globe">
       <div class="container">
-        <p class="eyebrow" data-reveal>06 — Contact</p>
-        <h2 class="contact__title display" data-reveal>Let's build something <em>thoughtful.</em></h2>
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Contact</p>
+          <h2 class="display" data-reveal>Let&rsquo;s build something <em>thoughtful.</em></h2>
+        </div>
         <a href="mailto:ujwalbagul9@gmail.com" class="contact__email" data-reveal>ujwalbagul9@gmail.com <span>↗</span></a>
         <ul class="contact__links" data-reveal-group>
-          <li><a href="https://www.linkedin.com/in/REPLACE_ME" target="_blank" rel="noopener" data-linkedin>LinkedIn ↗</a></li>
-          <li><a href="https://github.com/Ujwal164" target="_blank" rel="noopener">GitHub ↗</a></li>
-          <li><a href="/Ujwal-Bagul-Resume.pdf" target="_blank" rel="noopener">Resume ↗</a></li>
+          <li><a href="https://www.linkedin.com/in/REPLACE_ME" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" data-linkedin>LinkedIn <span class="btn__arrow">↗</span></a></li>
+          <li><a href="https://github.com/Ujwal164" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub <span class="btn__arrow">↗</span></a></li>
+          <li><a href="/Ujwal-Bagul-Resume.pdf" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Resume <span class="btn__arrow">↗</span></a></li>
         </ul>
       </div>
     </section>

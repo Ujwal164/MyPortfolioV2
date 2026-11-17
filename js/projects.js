@@ -320,7 +320,7 @@ function fruit(root) {
   s.innerHTML = `
     <rect x="262" y="0" width="76" height="300" fill="#1a1b1e" stroke="rgba(241,236,226,.12)"/>
     <line class="belt" x1="300" y1="0" x2="300" y2="300" stroke="rgba(241,236,226,.18)" stroke-width="70" stroke-dasharray="2 22"/>
-    <g font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="2" text-anchor="middle">
+    <g font-family="Inter, system-ui, sans-serif" font-size="11" letter-spacing="2" text-anchor="middle">
       <rect x="40" y="270" width="150" height="80" rx="10" fill="rgba(255,107,91,.08)" stroke="rgba(255,107,91,.5)"/>
       <text x="115" y="342" fill="#ff6b5b">APPLES</text>
       <rect x="410" y="270" width="150" height="80" rx="10" fill="rgba(255,176,91,.08)" stroke="rgba(255,176,91,.5)"/>
