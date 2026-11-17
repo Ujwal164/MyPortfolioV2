@@ -530,6 +530,10 @@ main, .footer, .nav { position: relative; z-index: 2; }
   font-size: clamp(64px, 12vw, 180px); line-height: 0.9; letter-spacing: -0.02em;
   margin: 24px 0 32px;
 }
+/* splitText clips each char; give descenders (g, y) room inside the clip box */
+.case-hero__title span:has(> [data-char]) { padding-bottom: 0.2em; margin-bottom: -0.2em; }
+.case-brand { display: flex; align-items: center; gap: 16px; }
+.case-brand img { width: 48px; height: 48px; object-fit: contain; }
 .case-hero__lead { max-width: 680px; font-size: clamp(18px, 1.8vw, 22px); color: var(--muted); }
 .case-hero__lead em { color: var(--text); font-family: var(--font-display); font-size: 1.15em; }
 .case-meta {

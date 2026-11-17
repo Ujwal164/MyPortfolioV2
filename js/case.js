@@ -20,7 +20,7 @@ const title = document.querySelector('.case-hero__title');
 if (title && !reduced) {
   const { chars } = splitText(title, { chars: { wrap: 'clip' } });
   utils.set(title, { opacity: 1 });
-  animate(chars, { translateY: ['105%', '0%'], duration: 1200, delay: stagger(35, { start: 150 }), ease: 'outExpo' });
+  animate(chars, { translateY: ['135%', '0%'], duration: 1200, delay: stagger(35, { start: 150 }), ease: 'outExpo' });
 }
 
 /* reveals */
